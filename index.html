@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/37ef4fca07.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header>
+    <div id="logo">
+      <img 
+        src="img/vector.svg" 
+        alt="Logo Encriptador"
+      />
+    </div>
+  </header>
+
+  <body>
+    <div>
+    <textarea
+      id="textoEntrada"
+      type="text"
+      cols="40"
+      placeholder="Ingrese el texto aquí"
+    ></textarea>
+  </div>
+  <div>
+    <i class="fa fa-info-circle" aria-hidden="true">
+      Solo letras minúsculas y sin acentos</i
+    >
+    <button id="botonEncriptar">Encriptar</button>
+    <button id="botonDesencriptar">Descencriptar</button>
+  </div>
+  <div>
+    <textarea
+      id="textoSalida"
+      type="text" 
+      cols="40"
+    ></textarea>
+  </div>
+    <div id="mensajeVacio" class="ocultar">
+        <img
+            id="entradaVacia"
+            src="img/entradaVacia.png"
+            alt="No se encontro mensaje."
+        />
+        <div id="mensaje" > 
+            <p><b>Ningún mensaje se encontro</b></br>Ingrese el texto que desees encriptar o desencriptar</p>
+        </div>
+    </div>
+    <footer>
+      <div>
+      Desarrollado por <a target="_blank" href="https://alealrom.co/">Alejandra Álvarez Romero</a>
+    </div>
+    </footer>
+    <script src ="main.js"></script>
+  </body>
+</html>
